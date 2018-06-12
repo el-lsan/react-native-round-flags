@@ -9,13 +9,13 @@ type Props = {
   style?: any,
 };
 
-const Flag = ({ size = 64, code, type = 'shiny', style, responsive = false }: Props) => {
+const Flag = ({ size = 64, code, type = 'shiny', style, containerStyle, responsive = false }: Props) => {
   const flag = flags[`icons${size}`][code];
   const unknownFlag = flags[`icons${size}`]['unknown'];
 
   return (responsive) ? (
     <View
-      style={{flex:1,flexDirection: 'row'}}>
+      style={{flex:1,flexDirection: 'row'}, containerStyle}>
       <Image
         resizeMode='contain'
         source={flag || unknownFlag}
