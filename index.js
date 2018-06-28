@@ -15,7 +15,7 @@ const Flag = ({ size = 64, code, type = 'shiny', style, containerStyle, responsi
 
   return (responsive) ? (
     <View
-      style={{flex:1,flexDirection: 'row'}, containerStyle}>
+      style={[{flex:1,flexDirection: 'row'}, containerStyle]}>
       <Image
         resizeMode='contain'
         source={flag || unknownFlag}
