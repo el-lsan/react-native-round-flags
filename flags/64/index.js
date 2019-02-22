@@ -243,4 +243,5 @@ export const ZM = require('./ZM.png');
 export const ZR = require('./ZR.png');
 export const ZW = require('./ZW.png');
 export const unknown = require('./_unknown.png');
-export const england = require('./_england.png');
+export const EN = require('./_england.png');
+export const KS = require('./_kosovo.png');
